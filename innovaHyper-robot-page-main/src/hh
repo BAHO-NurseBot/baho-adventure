@@ -1,0 +1,419 @@
+.App {
+  text-align: center;
+  font-weight: 700;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  background-image: url('../public/bg.png'); 
+  background-repeat: no-repeat;
+  flex-direction: column;
+  font-size: calc(5px + 2vmin);
+  color: black;
+  display: flex;
+}
+
+.bg-transparent {
+  justify-content: center;
+  background-color: #ffffffa1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card{
+  margin-top: 27vh;
+}
+
+.card > h4{
+  margin-bottom: 3rem;
+}
+
+.card-id {
+  margin: auto;
+  background-color: #4AB848;
+  width: 400px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.tap{
+  color: rgb(36, 43, 94);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.noactivecard{
+  margin-top: 2rem;
+  font-size: 15px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.icon {
+  width: 120px;
+  /* height: 50px; */
+}
+
+.flex {
+  display: inline-flex;
+  position: absolute;
+}
+
+.flex img {
+  height: 8rem;
+  width: 7rem;
+}
+
+.left-top {
+  left: 5rem;
+  top: 5rem;
+}
+
+.left-bottom {
+  left: 5rem;
+  bottom: 5rem;
+}
+
+.right-top {
+  right: 5rem;
+  top: 5rem;
+}
+
+.right-bottom {
+  right: 5rem;
+  bottom: 5rem;
+}
+
+.center-bottom {
+  right: 45%;
+  bottom: 3rem;
+  position: absolute;
+}
+
+.text-sm {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  margin: 20px 20px 10px;
+}
+
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .bg-transparent {
+    width: 80%;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+/* General Styles */
+.App {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    min-height: 100vh;
+    background-image: url('../public/bg.png'); 
+    background-repeat: no-repeat;
+    flex-direction: column;
+    font-size: calc(5px + 2vmin);
+    color: black;
+    display: flex;
+  }
+  
+  .bg-transparent {
+    justify-content: center;
+    background-color: #ffffffa1;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .card {
+    margin-top: 27vh;
+  }
+  
+  .card > h4 {
+    margin-bottom: 3rem;
+  }
+  
+  .card-id {
+    margin: auto;
+    background-color: #4AB848;
+    width: 400px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .tap {
+    color: rgb(36, 43, 94);
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .noactivecard {
+    margin-top: 2rem;
+    font-size: 15px;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .icon {
+    width: 120px;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .flex img {
+    height: 8rem;
+    width: 7rem;
+  }
+  
+  .text-sm {
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    margin: 20px 20px 10px;
+  }
+  
+  /* Media Queries */
+  
+  /* For laptops and tablets */
+  @media (min-width: 769px) {
+    .App-header {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem;
+    }
+  
+    .flex {
+      flex-basis: calc(50% - 2rem); /* Adjust to display two items per row */
+      justify-content: space-between;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .App-header {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .flex {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%; /* Make items stack vertically */
+      margin-bottom: 1rem;
+    }
+  
+    .flex img {
+      display: none; /* Hide images on mobile */
+    }
+  
+    .card-id, .tap, .noactivecard {
+      width: 90%; /* Make text blocks fill the screen width */
+    }
+  
+    .text-sm {
+      font-size: 14px; /* Slightly smaller font size on mobile */
+    }
+  }
+  
+  
+  
+
+.App {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    min-height: 100vh;
+    background-image: url('../public/bg.png');
+    background-repeat: no-repeat;
+    flex-direction: column;
+    font-size: calc(5px + 2vmin);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg-transparent {
+    justify-content: center;
+    background-color: #ffffffa1;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .card {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card > h4 {
+    margin-bottom: 3rem;
+  }
+  
+  .card-id {
+    background-color: #4AB848;
+    width: 400px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .tap {
+    color: rgb(36, 43, 94);
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .noactivecard {
+    margin-top: 2rem;
+    font-size: 15px;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .icon {
+    width: 120px;
+  }
+  
+  .flex {
+    display: inline-flex;
+    position: absolute;
+  }
+  
+  .flex img {
+    height: 8rem;
+    width: 7rem;
+  }
+  
+  .left-top {
+    left: 5rem;
+    top: 5rem;
+  }
+  
+  .left-bottom {
+    left: 5rem;
+    bottom: 5rem;
+  }
+  
+  .right-top {
+    right: 5rem;
+    top: 5rem;
+  }
+  
+  .right-bottom {
+    right: 5rem;
+    bottom: 5rem;
+  }
+  
+  .center-bottom {
+    right: 45%;
+    bottom: 3rem;
+    position: absolute;
+  }
+  
+  .text-sm {
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    margin: 20px 20px 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      align-items: center;
+    }
+  
+    .flex {
+      position: absolute;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      margin-top: 2rem;
+    }
+  
+    .flex {
+      position: relative;
+      margin-top: 1rem;
+    }
+  
+    .icon {
+      display: none;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

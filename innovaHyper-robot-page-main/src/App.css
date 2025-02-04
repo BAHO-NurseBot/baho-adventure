@@ -1,0 +1,199 @@
+
+.App {
+  text-align: center;
+  font-weight: 700;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  background-image: url('../public/bg.png');
+  background-repeat: no-repeat;
+  flex-direction: column;
+  font-size: calc(5px + 2vmin);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-transparent {
+  justify-content: center;
+  background-color: #ffffffa1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card > h4 {
+  margin-bottom: 3rem;
+}
+
+.card-id {
+  background-color: #4AB848;
+  width: 70%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.tap {
+  color: rgb(36, 43, 94);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.noactivecard {
+  margin-top: 2rem;
+  font-size: 15px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.icon {
+  width: 120px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.flex img {
+  height: 8rem;
+  width: 7rem;
+}
+
+.left-top {
+  left: 5rem;
+  top: 25%
+}
+
+.left-middle {
+  left: 5rem;
+  top: 50%;
+}
+
+.left-bottom {
+  left: 5rem;
+  bottom: 5rem;
+}
+
+.right-top {
+  right: 5rem;
+  top: 25%
+}
+
+.right-middle {
+  right: 5rem;
+  top: 50%;
+}
+
+.right-bottom {
+  right: 5rem;
+  bottom: 5rem;
+}
+
+.center-bottom {
+  right: 45%;
+  bottom: 3rem;
+  position: absolute;
+}
+
+.text-sm {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  margin: 20px 20px 10px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    align-items: center;
+  }
+
+  .flex {
+    position: absolute;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-top: 2rem;
+  }
+
+  .flex {
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+
+  .left-top {
+    left:0rem;
+    top:0rem;
+  }
+  
+  .left-middle {
+    left:0rem;
+    top: 0rem;
+  }
+  
+  .left-bottom {
+    left:0rem;
+    bottom:0rem;
+  }
+  
+  .right-top {
+    right:0rem;
+    top:0rem;
+  }
+  
+  .right-middle {
+    right:0rem;
+    top: 0rem;
+  }
+  
+  .right-bottom {
+    right:0rem;
+    bottom:0rem;
+  }
+  
+  .center-bottom {
+    right: 0%;
+    bottom: 0rem;
+    position: relative;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
